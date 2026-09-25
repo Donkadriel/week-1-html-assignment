@@ -37,6 +37,18 @@
       a {
         color: #4da3ff;
       }
+      .icon-line {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 6px 0;
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        filter: invert(1);
+      }
     </style>
   </head>
   <body>
@@ -57,14 +69,26 @@
         <p>You can reach me through any of the channels below.</p>
 
         <div id="contact-details">
-          <p>Email: OffordileDennis4@gmail.com</p>
-          <p>Phone: 08107596337</p>
-          <p>Location: Nigeria</p>
-          <p>
-            GitHub:
-            <a href="https://github.com/Donkadriel" target="_blank"
-              >github.com/Donkadriel</a
-            >
+          <p class="icon-line">
+            <img class="icon" src="images/mail.png" alt="" />
+            <span>Email: OffordileDennis4@gmail.com</span>
+          </p>
+          <p class="icon-line">
+            <img class="icon" src="images/phone.png" alt="" />
+            <span>Phone: 08107596337</span>
+          </p>
+          <p class="icon-line">
+            <img class="icon" src="images/location.png" alt="" />
+            <span>Location: Nigeria</span>
+          </p>
+          <p class="icon-line">
+            <img class="icon" src="images/git.png" alt="" />
+            <span>
+              GitHub:
+              <a href="https://github.com/Donkadriel" target="_blank"
+                >github.com/Donkadriel</a
+              >
+            </span>
           </p>
         </div>
       </section>
@@ -72,7 +96,16 @@
 
     <hr />
     <footer>
-      <p>written by Dennis, copyright &copy; 2026</p>
+      <p class="icon-line">
+        <img class="icon" src="images/git.png" alt="" />
+        <span>
+          GitHub:
+          <a href="https://github.com/Donkadriel" target="_blank"
+            >github.com/Donkadriel</a
+          >
+        </span>
+      </p>
+      <p>&copy; 2026 Donkadriel. All rights reserved.</p>
     </footer>
   </body>
 </html>
